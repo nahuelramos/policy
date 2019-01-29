@@ -1,0 +1,38 @@
+.news-box {    
+    height: 65rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
+    background-color: $color-grey-dark-4;
+
+    &__title {
+        background-image: linear-gradient(to right bottom, rgba(91, 186, 179, 0.8), rgba(13, 117, 109, 0.8));
+        background-size: cover;
+        font-size: 3rem;
+        color: $color-white;
+        text-align: center;
+    }
+
+    &__text {
+        padding: 4rem;
+        font-size: 1.8rem;
+        height: 31rem;
+        overflow: hidden;
+        font-weight: 300;
+        color: $color-black;
+    }
+
+    &__image {
+        padding: 3rem;
+    }
+
+    &__button {
+        margin: 3rem;
+    }
+}
+
+.news-left {
+    padding: 3rem 3rem 3rem 0;
+}
+
+.news-right {
+    padding: 3rem 0 3rem 3rem;
+}

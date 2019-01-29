@@ -1,0 +1,90 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 22rem 0;
+    }
+}
+
+.section-socials {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-dark, 0.8), 
+        rgba($color-primary, 0.8)), 
+        url(../img/heart.jpeg
+    );
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -15rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+}
+
+.section-appointment {
+    padding: 25rem 0 30rem 0;
+    background-color: $color-grey-light-1;
+    margin-top: -20rem;
+}
+
+.appointment {    
+    padding: 25rem 0 0 0;    
+    text-align: center;
+
+    &__form {
+        padding: 6rem;
+        background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-dark, 0.8), 
+        rgba($color-primary, 0.8)
+        );
+        background-size: cover;
+        height: 55rem;
+
+        @include respond(tab-port) {
+            height: 145rem;
+        }
+
+        @include respond(phone) {
+            height: 160rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
+}
+
+.section-specialties {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-dark, 0.8), 
+        rgba($color-primary, 0.8));    
+}
+
+.specialties {
+    text-align: center;
+    font-size: 1.6rem;
+    width: 100%;
+
+    &__image {
+        background: no-repeat 50% 50%;
+        image-rendering: crisp-edges;
+    }
+}
+
+.section-news {
+    text-align: center;
+    padding: 20rem 0;
+    background-color: $color-grey-light-1;
+    // margin-top: -20rem; 
+}
